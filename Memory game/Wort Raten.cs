@@ -25,7 +25,7 @@ namespace Memory_game
             //Setup();
 
         }
-
+        //dsfsdfsd
 //        private void KeyIsPressed(object sender, KeyPressEventArgs e)
 //        {
 //            if (e.KeyChar == (char)Keys.Enter)
