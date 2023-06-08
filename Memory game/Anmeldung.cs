@@ -10,7 +10,7 @@ namespace Memory_game
     {
         public SoundPlayer player;
 
-        public Anmeldung()
+        public Anmeldung()//3laui
         {
             InitializeComponent();
             player = new SoundPlayer("Hintergrund-Sound.wav"); //wav form damit windows form den sound erkennt 
