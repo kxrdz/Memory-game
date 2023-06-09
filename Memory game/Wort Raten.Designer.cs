@@ -125,6 +125,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Memory_game.Properties.Resources.Logisches_Denken;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1147, 814);
             this.Controls.Add(this.Zeigen_Bt);
             this.Controls.Add(this.Button_Neu_Starten);
