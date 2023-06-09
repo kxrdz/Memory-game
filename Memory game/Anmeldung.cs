@@ -13,7 +13,37 @@ namespace Memory_game
         {
             InitializeComponent();
             player = new SoundPlayer("Hintergrund-Sound.wav"); //wav form damit windows form den sound erkennt 
+            ConnectToDatabank();
         }
+
+        public static Datamodule DM;
+        private void ConnectToDatabank()
+        {
+            try
+            {
+                DM = new Datamodule("SYSDBA",
+                               "Diyar1010",
+                               @"C:\Users\diyar\Desktop\4\Memory game2\Memory_Game-DB.Fdb",
+                               "localhost",
+                               3050
+                               );
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Datenbank kann nicht geöffnet werden allllloooo verpiss dich " + ex.Message);
+
+            }
+
+
+            Console.WriteLine(DM.GetServerVersion());
+
+        }
+
+
+
+
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -65,6 +95,9 @@ namespace Memory_game
             
             if (textBox_Ben_An.Text == "Geben Sie den Benutzernamen ein" || string.IsNullOrEmpty(textBox_Ben_An.Text))
             {
+
+
+
                 panel_Meldung_An.Visible = true;
                 textBox_Ben_An.Focus();
                 return;
