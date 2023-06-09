@@ -61,12 +61,27 @@ namespace Memory_game
 
         private void WörterVoid()
         {
-            Wörter.Add("Pünktlichkeit");
-            Wörter.Add("Diyar");
-            Wörter.Add("Radiergummi");
-            Wörter.Add("Schuster");
-            Wörter.Add("Shehadeh");
-            Wörter.Add("Eichhörnchen");
+            Wörter.Add("Kaffeetasse");
+            Wörter.Add("Buchstabe");
+            Wörter.Add("Computer");
+            Wörter.Add("Fahrrad");
+            Wörter.Add("Tisch");
+            Wörter.Add("Sonnenblume");
+            Wörter.Add("Schokolade");
+            Wörter.Add("Gitarre");
+            Wörter.Add("Regenschirm");
+            Wörter.Add("Himmel");
+            Wörter.Add("Berg");
+            Wörter.Add("Strand");
+            Wörter.Add("Wasserfall");
+            Wörter.Add("Kamera");
+            Wörter.Add("Musik");
+            Wörter.Add("Tiger");
+            Wörter.Add("Elefant");
+            Wörter.Add("Löwe");
+            Wörter.Add("Vogel");
+            Wörter.Add("Wolke");
+
 
             Random zufall = new Random();
             Wörter = Wörter.OrderBy(wort => zufall.Next()).ToList();
