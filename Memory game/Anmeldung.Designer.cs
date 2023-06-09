@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anmeldung));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.label_Powered_by_Anwar = new System.Windows.Forms.Label();
             this.label_Klasse = new System.Windows.Forms.Label();
@@ -38,6 +39,10 @@
             this.label_Zur_Unterstützung = new System.Windows.Forms.Label();
             this.Insta_Link = new System.Windows.Forms.LinkLabel();
             this.whatsapp_Link = new System.Windows.Forms.LinkLabel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Logo_2 = new System.Windows.Forms.PictureBox();
+            this.Logo = new System.Windows.Forms.PictureBox();
             this.pnlAnmelden = new System.Windows.Forms.Panel();
             this.label_Zeit_An = new System.Windows.Forms.Label();
             this.Account_erstellen = new System.Windows.Forms.LinkLabel();
@@ -48,6 +53,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.Logo_Pass_An = new System.Windows.Forms.PictureBox();
             this.label_Passwort_An = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel_Meldung_An = new System.Windows.Forms.Panel();
@@ -55,6 +61,7 @@
             this.panel_Ben_Anm = new System.Windows.Forms.Panel();
             this.textBox_Ben_An = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Logo_Ben_An = new System.Windows.Forms.PictureBox();
             this.Login = new System.Windows.Forms.Label();
             this.label_Anmelde_Name_An = new System.Windows.Forms.Label();
             this.pnlAccount = new System.Windows.Forms.Panel();
@@ -84,22 +91,21 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.Zeit_An = new System.Windows.Forms.Timer(this.components);
-            this.Logo_Pass_An = new System.Windows.Forms.PictureBox();
-            this.Logo_Ben_An = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.Logo_2 = new System.Windows.Forms.PictureBox();
-            this.Logo = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.pnlAnmelden.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel_Meldung_An2.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_Pass_An)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel_Meldung_An.SuspendLayout();
             this.panel_Ben_Anm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_Ben_An)).BeginInit();
             this.pnlAccount.SuspendLayout();
             this.panel23.SuspendLayout();
             this.pnlPass2ER.SuspendLayout();
@@ -111,12 +117,6 @@
             this.pnlNameER.SuspendLayout();
             this.panel_Ben_Acc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_Pass_An)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_Ben_An)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -129,6 +129,20 @@
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
             this.panel1.Size = new System.Drawing.Size(1067, 33);
             this.panel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::Memory_game.Properties.Resources.stornieren;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(1010, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 29);
+            this.button2.TabIndex = 0;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // pnlLogo
             // 
@@ -220,6 +234,49 @@
             this.whatsapp_Link.TabStop = true;
             this.whatsapp_Link.Text = "whatsapp";
             this.whatsapp_Link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.whatsapp_LinkClicked);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::Memory_game.Properties.Resources.whatsapp;
+            this.pictureBox5.Location = new System.Drawing.Point(331, 252);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(42, 36);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::Memory_game.Properties.Resources.kisspng_google_logo_brand_instagram_5ab6f4d915a620_2415440715219396730887;
+            this.pictureBox6.Location = new System.Drawing.Point(320, 285);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(64, 68);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 12;
+            this.pictureBox6.TabStop = false;
+            // 
+            // Logo_2
+            // 
+            this.Logo_2.BackColor = System.Drawing.Color.Transparent;
+            this.Logo_2.Image = global::Memory_game.Properties.Resources.pngegg__1_;
+            this.Logo_2.Location = new System.Drawing.Point(196, 359);
+            this.Logo_2.Name = "Logo_2";
+            this.Logo_2.Size = new System.Drawing.Size(146, 171);
+            this.Logo_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo_2.TabIndex = 8;
+            this.Logo_2.TabStop = false;
+            // 
+            // Logo
+            // 
+            this.Logo.Image = global::Memory_game.Properties.Resources.bglogo_1;
+            this.Logo.Location = new System.Drawing.Point(0, -12);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(376, 258);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 5;
+            this.Logo.TabStop = false;
             // 
             // pnlAnmelden
             // 
@@ -340,6 +397,16 @@
             this.panel9.Size = new System.Drawing.Size(418, 1);
             this.panel9.TabIndex = 4;
             // 
+            // Logo_Pass_An
+            // 
+            this.Logo_Pass_An.Image = global::Memory_game.Properties.Resources.passwort;
+            this.Logo_Pass_An.Location = new System.Drawing.Point(23, 180);
+            this.Logo_Pass_An.Name = "Logo_Pass_An";
+            this.Logo_Pass_An.Size = new System.Drawing.Size(72, 83);
+            this.Logo_Pass_An.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo_Pass_An.TabIndex = 7;
+            this.Logo_Pass_An.TabStop = false;
+            // 
             // label_Passwort_An
             // 
             this.label_Passwort_An.AutoSize = true;
@@ -412,6 +479,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(418, 1);
             this.panel3.TabIndex = 4;
+            // 
+            // Logo_Ben_An
+            // 
+            this.Logo_Ben_An.Image = global::Memory_game.Properties.Resources.nutzer__1_;
+            this.Logo_Ben_An.Location = new System.Drawing.Point(23, 43);
+            this.Logo_Ben_An.Name = "Logo_Ben_An";
+            this.Logo_Ben_An.Size = new System.Drawing.Size(72, 79);
+            this.Logo_Ben_An.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo_Ben_An.TabIndex = 4;
+            this.Logo_Ben_An.TabStop = false;
             // 
             // Login
             // 
@@ -714,83 +791,6 @@
             // 
             this.Zeit_An.Tick += new System.EventHandler(this.Zeit_Tick_An);
             // 
-            // Logo_Pass_An
-            // 
-            this.Logo_Pass_An.Image = global::Memory_game.Properties.Resources.passwort;
-            this.Logo_Pass_An.Location = new System.Drawing.Point(23, 180);
-            this.Logo_Pass_An.Name = "Logo_Pass_An";
-            this.Logo_Pass_An.Size = new System.Drawing.Size(72, 83);
-            this.Logo_Pass_An.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo_Pass_An.TabIndex = 7;
-            this.Logo_Pass_An.TabStop = false;
-            // 
-            // Logo_Ben_An
-            // 
-            this.Logo_Ben_An.Image = global::Memory_game.Properties.Resources.nutzer__1_;
-            this.Logo_Ben_An.Location = new System.Drawing.Point(23, 43);
-            this.Logo_Ben_An.Name = "Logo_Ben_An";
-            this.Logo_Ben_An.Size = new System.Drawing.Size(72, 79);
-            this.Logo_Ben_An.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo_Ben_An.TabIndex = 4;
-            this.Logo_Ben_An.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::Memory_game.Properties.Resources.whatsapp;
-            this.pictureBox5.Location = new System.Drawing.Point(331, 252);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Memory_game.Properties.Resources.kisspng_google_logo_brand_instagram_5ab6f4d915a620_2415440715219396730887;
-            this.pictureBox6.Location = new System.Drawing.Point(320, 285);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(64, 68);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 12;
-            this.pictureBox6.TabStop = false;
-            // 
-            // Logo_2
-            // 
-            this.Logo_2.BackColor = System.Drawing.Color.Transparent;
-            this.Logo_2.Image = global::Memory_game.Properties.Resources.pngegg__1_;
-            this.Logo_2.Location = new System.Drawing.Point(196, 359);
-            this.Logo_2.Name = "Logo_2";
-            this.Logo_2.Size = new System.Drawing.Size(146, 171);
-            this.Logo_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo_2.TabIndex = 8;
-            this.Logo_2.TabStop = false;
-            // 
-            // Logo
-            // 
-            this.Logo.Image = global::Memory_game.Properties.Resources.bglogo_1;
-            this.Logo.Location = new System.Drawing.Point(0, -12);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(376, 258);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 5;
-            this.Logo.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::Memory_game.Properties.Resources.stornieren;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1010, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 29);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
             // Anmeldung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -813,6 +813,10 @@
             this.panel1.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.pnlLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.pnlAnmelden.ResumeLayout(false);
             this.pnlAnmelden.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -820,11 +824,13 @@
             this.panel_Meldung_An2.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_Pass_An)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel_Meldung_An.ResumeLayout(false);
             this.panel_Meldung_An.PerformLayout();
             this.panel_Ben_Anm.ResumeLayout(false);
             this.panel_Ben_Anm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_Ben_An)).EndInit();
             this.pnlAccount.ResumeLayout(false);
             this.pnlAccount.PerformLayout();
             this.panel23.ResumeLayout(false);
@@ -843,12 +849,6 @@
             this.panel_Ben_Acc.ResumeLayout(false);
             this.panel_Ben_Acc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_Pass_An)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_Ben_An)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
 
         }

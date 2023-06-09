@@ -8,9 +8,8 @@ namespace Memory_game
 {
     public partial class Anmeldung : Form
     {
-        public SoundPlayer player;
-        //anwar 
-        public Anmeldung()//3laui
+        public SoundPlayer player;       
+        public Anmeldung()
         {
             InitializeComponent();
             player = new SoundPlayer("Hintergrund-Sound.wav"); //wav form damit windows form den sound erkennt 
