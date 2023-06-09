@@ -71,7 +71,7 @@ namespace Memory_game
             }
 
             if (textBox2.Text == "Geben Sie den Passwort ein" || string.IsNullOrEmpty(textBox2.Text))
-            {
+            { 
                 panel_Meldung_An2.Visible = true;
                 textBox2.Focus();
                 return;
