@@ -135,6 +135,7 @@
             this.Controls.Add(this.lb_Wort_Raten);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Wort_Raten";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wort_Raten";
             this.ResumeLayout(false);
             this.PerformLayout();

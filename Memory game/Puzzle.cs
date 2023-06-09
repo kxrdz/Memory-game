@@ -99,6 +99,7 @@ namespace Memory_game
                             lb_gemachte_bew.Text = "Bewegungen gemacht : 0";
                             label_verbleibende_Zeit_Puzzle.Text = "verbleibende Zeit: ";
                             Zeit.Reset();
+                            lb_gemachte_bew.ResetText();
                             Mischen();
                         }
                     }
@@ -136,6 +137,7 @@ namespace Memory_game
                 pauseAktiviert = false;
                 btnPause.Text = "Pause";
                 spielGestartet = false;
+                versuche = 0;
             }
         }
 
