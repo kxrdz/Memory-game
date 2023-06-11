@@ -315,6 +315,7 @@
     <None Include="Resources\kisspng-google-logo-brand-instagram-5ab6f4d915a620.2415440715219396730887.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Logisches-Denken.jpg" />
     <None Include="Resources\reihenfolge.png" />
     <None Include="Resources\wallpaperflare.com_wallpaper.jpg" />
     <None Include="Resources\diy-spanish-memory-game-1200x628-1-1080x628.jpg" />

@@ -72,7 +72,7 @@
             this.gbPuzzleBox.Controls.Add(this.pbx7);
             this.gbPuzzleBox.Controls.Add(this.pbx8);
             this.gbPuzzleBox.Controls.Add(this.pbx9);
-            this.gbPuzzleBox.Location = new System.Drawing.Point(901, 115);
+            this.gbPuzzleBox.Location = new System.Drawing.Point(901, 109);
             this.gbPuzzleBox.Name = "gbPuzzleBox";
             this.gbPuzzleBox.Size = new System.Drawing.Size(905, 916);
             this.gbPuzzleBox.TabIndex = 1;

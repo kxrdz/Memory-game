@@ -29,7 +29,7 @@ namespace Memory_game
         byte zustand = 0; //Zustand des Spiels verfolgen (0 keine Karte ausgewählt, 1 eine Karte ausgewählt).
         int verbleibenden_Karten = 8; // Anzahl der verbleibenden Karten im Spiel speicheren.
         byte zeigen = 3;                //Alle Karten Zeigen
-        byte übrige_Zeit = 100;
+        byte übrige_Zeit = 200;
 
         private void Kartenpaare_suchen_Load(object sender, EventArgs e)
         {
@@ -142,7 +142,7 @@ namespace Memory_game
             label_verbleibende_Karten.Text = "Verbleibende Karten: " + verbleibenden_Karten;
             btZeigen.Text = "Zeigen (" + zeigen + ")";
             zustand = 0;
-            übrige_Zeit = 100;
+            übrige_Zeit = 200;
             label_verbleibende_Zeit.Text = "Verbleibende Zeit: " + übrige_Zeit;
             Alles_aktivieren(); 
         }

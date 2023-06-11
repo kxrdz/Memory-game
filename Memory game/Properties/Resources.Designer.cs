@@ -333,6 +333,16 @@ namespace Memory_game.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logisches_Denken {
+            get {
+                object obj = ResourceManager.GetObject("Logisches-Denken", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap memory_game {
             get {
                 object obj = ResourceManager.GetObject("memory-game", resourceCulture);
