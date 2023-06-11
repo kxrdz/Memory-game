@@ -156,6 +156,8 @@ namespace Memory_game
         private void Button_Exit_Puzzle_Click(object sender, EventArgs e)
         {
             this.Close();
+            Spiel_Menü form2 = new Spiel_Menü();
+            form2.Show();
         }
 
         private void Anhalten_oder_fortsetzen(object sender, EventArgs e)

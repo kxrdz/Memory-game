@@ -59,6 +59,7 @@ namespace Memory_game
             this.Close();
             Spiel_Menü form2 = new Spiel_Menü();
             form2.Show();
+          
 
             //this.WindowState = FormWindowState.Normal;
         }
@@ -145,12 +146,16 @@ namespace Memory_game
         {
             Kartenpaare_suchen form3 = new Kartenpaare_suchen();
             form3.Show();
+            pnlSpielen.Visible = false;
+            this.Close();
         }
 
         private void Puzzle_Spiel_Logo_Click(object sender, EventArgs e)
         {
             Puzzle form4 = new Puzzle();
             form4.Show();
+            pnlSpielen.Visible = false;
+            this.Close();
         }
 
         private void Zeit_Spiel_Tick(object sender, EventArgs e)
@@ -168,6 +173,16 @@ namespace Memory_game
         {
             Wort_Raten wort_Raten = new Wort_Raten();
             wort_Raten.Show();
+            pnlSpielen.Visible = false;
+            this.Close();
+            
+        }
+
+        private void Bt_Exit_Info_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Spiel_Menü form2 = new Spiel_Menü();
+            form2.Show();
         }
     }
 }

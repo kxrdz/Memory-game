@@ -17,25 +17,20 @@ namespace Memory_game
         }
 
         public static Datamodule DM;
+
         private void ConnectToDatabank() //daten bank verbindung
         {
             try
             {
-                DM = new Datamodule("SYSDBA",
-                               "masterkey",
+                DM = new Datamodule("SYSDBA","masterkey",
                                @"C:\Users\anwar\Documents\Github\MEMORY_GAME-DB.FDB",
-                               "localhost",
-                               3050
-                               );
-
+                               "localhost",3050);
             }
             catch (Exception ex)
             {
-
-                MessageBox.Show("Datenbank kann nicht geöffnet werden allllloooo verpiss dich " + ex.Message);
-
+                MessageBox.Show("Datenbank kann nicht geöffnet werden!!. Versuchen Sie es " +
+                "nochmal oder kontaktieren Sie uns über der verlinkten WhatsApp link " + ex.Message);
             }
-
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)

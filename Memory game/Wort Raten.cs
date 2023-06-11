@@ -139,6 +139,8 @@ namespace Memory_game
         private void button13_Click(object sender, EventArgs e)
         {
             this.Close();
+            Spiel_Menü form2 = new Spiel_Menü();
+            form2.Show();
         }
     }
 

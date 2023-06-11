@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label4.Text" xml:space="preserve">
+  <metadata name="Zeit_Spiel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="lb_Text_Info.Text" xml:space="preserve">
     <value>Speicherung von Spielernamen und score in einer Datenbank.
 Wissenschaftliche Fragestellung: Wie kann ein Memory-Spiel entwickelt werden, das
 kognitive Fähigkeiten hera usfordert und Fortschritte der Spieler aufzeichnet?
 Soll-Konzept: Intuitive Benutzeroberfläche, mehrere Levels zur Herausforderung
 verschiedener Levels, Datenbank zur Speicherung von score</value>
   </data>
-  <metadata name="Zeit_Spiel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

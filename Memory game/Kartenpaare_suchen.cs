@@ -17,7 +17,7 @@ using System.Windows.Forms;
 namespace Memory_game
 {
     public partial class Kartenpaare_suchen : Form
-    {
+    {      
         private bool spielGestartet = false;
         private int versuche = 0;
         public Kartenpaare_suchen()
@@ -55,7 +55,8 @@ namespace Memory_game
             if (tagValue >= 1 && tagValue <= 8)
             {
                 string Ressourcenname = "_" + tagValue.ToString();
-                box.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject(Ressourcenname);
+                box.Image = (System.Drawing.Image)Properties.Resources.
+                ResourceManager.GetObject(Ressourcenname);
             }
             else
             {
@@ -70,7 +71,8 @@ namespace Memory_game
         #endregion
         */
 
-        void Tag_zufällig_festlegen() //Jede Picturebox repräsentiert eine Karte im Memory-Spiel, und das Tag wird verwendet, um die Bildpaare zu identifizieren.
+        void Tag_zufällig_festlegen() //Jede Picturebox repräsentiert eine Karte im Memory-Spiel,
+                                      //und das Tag wird verwendet, um die Bildpaare zu identifizieren.
         {                             //Random = Zufällig
             List<int> tags = Enumerable.Range(1, 8).ToList();
             tags.AddRange(tags);      //Bereich hinzufügen(Tag)
@@ -130,6 +132,7 @@ namespace Memory_game
         {
             foreach (Control x in this.Controls) if (x is PictureBox) (x as PictureBox).Enabled = false;
         }
+
         void Neues_Spiel()
         {
             versuche = 0;
@@ -220,6 +223,8 @@ namespace Memory_game
         private void Exit_Button_Karten_Click(object sender, EventArgs e)
         {
             this.Close();
+            Spiel_Menü form2 = new Spiel_Menü();
+            form2.Show();
         }
     }
 }

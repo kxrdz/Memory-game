@@ -38,17 +38,21 @@
             this.button_Highscore_Spiel = new System.Windows.Forms.Button();
             this.button_Spielen_Spiel = new System.Windows.Forms.Button();
             this.button_Exit_Spiel = new System.Windows.Forms.Button();
-            this.pnlInfo = new System.Windows.Forms.Panel();
-            this.Button_Exit_Spiel_Info = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnlHighscore = new System.Windows.Forms.Panel();
+            this.wort = new System.Windows.Forms.Label();
+            this._lbl_Hs_Karten = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this._lbl_Hs_wort = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this._lbl_Hs_Puzzel = new System.Windows.Forms.Label();
             this.button_Exit_Spiel_Highscore = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.pnlSpielen = new System.Windows.Forms.Panel();
+            this.lb_Puzzle_Sp_Menü = new System.Windows.Forms.Label();
+            this.lb_Wort_Raten_S_Menü = new System.Windows.Forms.Label();
+            this.lb_Kartenpaare_suchen_S_Menü = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_Exit_Spiel_Fenster = new System.Windows.Forms.Button();
-            this.button_Next = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.Puzzle_Spiel_Logo = new System.Windows.Forms.PictureBox();
             this.Karten_Spiel_Logo = new System.Windows.Forms.PictureBox();
@@ -61,19 +65,17 @@
             this.button_Sound_Max = new System.Windows.Forms.Button();
             this.label_Einstellung = new System.Windows.Forms.Label();
             this.Zeit_Spiel = new System.Windows.Forms.Timer(this.components);
-            this._lbl_Hs_Puzzel = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this._lbl_Hs_wort = new System.Windows.Forms.Label();
-            this.wort = new System.Windows.Forms.Label();
-            this._lbl_Hs_Karten = new System.Windows.Forms.Label();
-            this.pnlInfo.SuspendLayout();
+            this.pnlInfo = new System.Windows.Forms.Panel();
+            this.Bt_Exit_Info = new System.Windows.Forms.Button();
+            this.lb_Text_Info = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.pnlHighscore.SuspendLayout();
             this.pnlSpielen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Puzzle_Spiel_Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Karten_Spiel_Logo)).BeginInit();
             this.pnlEinstellung.SuspendLayout();
+            this.pnlInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -192,52 +194,6 @@
             this.button_Exit_Spiel.UseVisualStyleBackColor = false;
             this.button_Exit_Spiel.Click += new System.EventHandler(this.Button_Exit_Spiel_Click);
             // 
-            // pnlInfo
-            // 
-            this.pnlInfo.Controls.Add(this.Button_Exit_Spiel_Info);
-            this.pnlInfo.Controls.Add(this.label4);
-            this.pnlInfo.Controls.Add(this.label3);
-            this.pnlInfo.Location = new System.Drawing.Point(1501, 41);
-            this.pnlInfo.Name = "pnlInfo";
-            this.pnlInfo.Size = new System.Drawing.Size(208, 122);
-            this.pnlInfo.TabIndex = 28;
-            // 
-            // Button_Exit_Spiel_Info
-            // 
-            this.Button_Exit_Spiel_Info.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Exit_Spiel_Info.BackgroundImage = global::Memory_game.Properties.Resources.stornieren;
-            this.Button_Exit_Spiel_Info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Button_Exit_Spiel_Info.FlatAppearance.BorderSize = 0;
-            this.Button_Exit_Spiel_Info.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Button_Exit_Spiel_Info.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Button_Exit_Spiel_Info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Exit_Spiel_Info.Location = new System.Drawing.Point(1750, 42);
-            this.Button_Exit_Spiel_Info.Name = "Button_Exit_Spiel_Info";
-            this.Button_Exit_Spiel_Info.Size = new System.Drawing.Size(78, 70);
-            this.Button_Exit_Spiel_Info.TabIndex = 28;
-            this.Button_Exit_Spiel_Info.UseVisualStyleBackColor = false;
-            this.Button_Exit_Spiel_Info.Click += new System.EventHandler(this.Button_Exit_Spiel_Info_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(421, 238);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1031, 155);
-            this.label4.TabIndex = 1;
-            this.label4.Text = resources.GetString("label4.Text");
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(769, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 108);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Info";
-            // 
             // pnlHighscore
             // 
             this.pnlHighscore.BackgroundImage = global::Memory_game.Properties.Resources.istockphoto_1180144927_612x612;
@@ -248,14 +204,72 @@
             this.pnlHighscore.Controls.Add(this._lbl_Hs_wort);
             this.pnlHighscore.Controls.Add(this.label7);
             this.pnlHighscore.Controls.Add(this._lbl_Hs_Puzzel);
-            this.pnlHighscore.Controls.Add(this.pnlInfo);
             this.pnlHighscore.Controls.Add(this.button_Exit_Spiel_Highscore);
             this.pnlHighscore.Controls.Add(this.label6);
-            this.pnlHighscore.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlHighscore.Location = new System.Drawing.Point(0, 0);
+            this.pnlHighscore.Location = new System.Drawing.Point(670, 86);
             this.pnlHighscore.Name = "pnlHighscore";
-            this.pnlHighscore.Size = new System.Drawing.Size(1904, 1041);
+            this.pnlHighscore.Size = new System.Drawing.Size(143, 132);
             this.pnlHighscore.TabIndex = 29;
+            // 
+            // wort
+            // 
+            this.wort.AutoSize = true;
+            this.wort.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wort.Location = new System.Drawing.Point(292, 250);
+            this.wort.Name = "wort";
+            this.wort.Size = new System.Drawing.Size(72, 25);
+            this.wort.TabIndex = 32;
+            this.wort.Text = "karten";
+            // 
+            // _lbl_Hs_Karten
+            // 
+            this._lbl_Hs_Karten.AutoSize = true;
+            this._lbl_Hs_Karten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbl_Hs_Karten.Location = new System.Drawing.Point(387, 250);
+            this._lbl_Hs_Karten.Name = "_lbl_Hs_Karten";
+            this._lbl_Hs_Karten.Size = new System.Drawing.Size(60, 25);
+            this._lbl_Hs_Karten.TabIndex = 33;
+            this._lbl_Hs_Karten.Text = "0000";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(306, 280);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 25);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "wort:";
+            // 
+            // _lbl_Hs_wort
+            // 
+            this._lbl_Hs_wort.AutoSize = true;
+            this._lbl_Hs_wort.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbl_Hs_wort.Location = new System.Drawing.Point(387, 281);
+            this._lbl_Hs_wort.Name = "_lbl_Hs_wort";
+            this._lbl_Hs_wort.Size = new System.Drawing.Size(60, 25);
+            this._lbl_Hs_wort.TabIndex = 31;
+            this._lbl_Hs_wort.Text = "0000";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(292, 209);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 25);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Puzzel: ";
+            // 
+            // _lbl_Hs_Puzzel
+            // 
+            this._lbl_Hs_Puzzel.AutoSize = true;
+            this._lbl_Hs_Puzzel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbl_Hs_Puzzel.Location = new System.Drawing.Point(387, 209);
+            this._lbl_Hs_Puzzel.Name = "_lbl_Hs_Puzzel";
+            this._lbl_Hs_Puzzel.Size = new System.Drawing.Size(60, 25);
+            this._lbl_Hs_Puzzel.TabIndex = 29;
+            this._lbl_Hs_Puzzel.Text = "0000";
             // 
             // button_Exit_Spiel_Highscore
             // 
@@ -287,16 +301,54 @@
             // 
             this.pnlSpielen.BackgroundImage = global::Memory_game.Properties.Resources._1624;
             this.pnlSpielen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlSpielen.Controls.Add(this.lb_Puzzle_Sp_Menü);
+            this.pnlSpielen.Controls.Add(this.lb_Wort_Raten_S_Menü);
+            this.pnlSpielen.Controls.Add(this.lb_Kartenpaare_suchen_S_Menü);
             this.pnlSpielen.Controls.Add(this.pictureBox1);
             this.pnlSpielen.Controls.Add(this.button_Exit_Spiel_Fenster);
-            this.pnlSpielen.Controls.Add(this.button_Next);
             this.pnlSpielen.Controls.Add(this.button5);
             this.pnlSpielen.Controls.Add(this.Puzzle_Spiel_Logo);
             this.pnlSpielen.Controls.Add(this.Karten_Spiel_Logo);
-            this.pnlSpielen.Location = new System.Drawing.Point(191, 216);
+            this.pnlSpielen.Location = new System.Drawing.Point(188, 271);
             this.pnlSpielen.Name = "pnlSpielen";
             this.pnlSpielen.Size = new System.Drawing.Size(329, 222);
             this.pnlSpielen.TabIndex = 1;
+            // 
+            // lb_Puzzle_Sp_Menü
+            // 
+            this.lb_Puzzle_Sp_Menü.AutoSize = true;
+            this.lb_Puzzle_Sp_Menü.BackColor = System.Drawing.Color.Gray;
+            this.lb_Puzzle_Sp_Menü.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Puzzle_Sp_Menü.ForeColor = System.Drawing.Color.White;
+            this.lb_Puzzle_Sp_Menü.Location = new System.Drawing.Point(472, 665);
+            this.lb_Puzzle_Sp_Menü.Name = "lb_Puzzle_Sp_Menü";
+            this.lb_Puzzle_Sp_Menü.Size = new System.Drawing.Size(131, 42);
+            this.lb_Puzzle_Sp_Menü.TabIndex = 37;
+            this.lb_Puzzle_Sp_Menü.Text = "Puzzle";
+            // 
+            // lb_Wort_Raten_S_Menü
+            // 
+            this.lb_Wort_Raten_S_Menü.AutoSize = true;
+            this.lb_Wort_Raten_S_Menü.BackColor = System.Drawing.Color.Gray;
+            this.lb_Wort_Raten_S_Menü.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Wort_Raten_S_Menü.ForeColor = System.Drawing.Color.White;
+            this.lb_Wort_Raten_S_Menü.Location = new System.Drawing.Point(1289, 665);
+            this.lb_Wort_Raten_S_Menü.Name = "lb_Wort_Raten_S_Menü";
+            this.lb_Wort_Raten_S_Menü.Size = new System.Drawing.Size(206, 42);
+            this.lb_Wort_Raten_S_Menü.TabIndex = 36;
+            this.lb_Wort_Raten_S_Menü.Text = "Wort Raten";
+            // 
+            // lb_Kartenpaare_suchen_S_Menü
+            // 
+            this.lb_Kartenpaare_suchen_S_Menü.AutoSize = true;
+            this.lb_Kartenpaare_suchen_S_Menü.BackColor = System.Drawing.Color.Gray;
+            this.lb_Kartenpaare_suchen_S_Menü.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Kartenpaare_suchen_S_Menü.ForeColor = System.Drawing.Color.White;
+            this.lb_Kartenpaare_suchen_S_Menü.Location = new System.Drawing.Point(839, 367);
+            this.lb_Kartenpaare_suchen_S_Menü.Name = "lb_Kartenpaare_suchen_S_Menü";
+            this.lb_Kartenpaare_suchen_S_Menü.Size = new System.Drawing.Size(356, 42);
+            this.lb_Kartenpaare_suchen_S_Menü.TabIndex = 35;
+            this.lb_Kartenpaare_suchen_S_Menü.Text = "Kartenpaare suchen";
             // 
             // pictureBox1
             // 
@@ -326,20 +378,6 @@
             this.button_Exit_Spiel_Fenster.UseVisualStyleBackColor = false;
             this.button_Exit_Spiel_Fenster.Click += new System.EventHandler(this.Button_Exit_Spiel_Fenster_Click);
             // 
-            // button_Next
-            // 
-            this.button_Next.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button_Next.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
-            this.button_Next.FlatAppearance.BorderSize = 0;
-            this.button_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Next.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Next.Location = new System.Drawing.Point(848, 774);
-            this.button_Next.Name = "button_Next";
-            this.button_Next.Size = new System.Drawing.Size(310, 101);
-            this.button_Next.TabIndex = 25;
-            this.button_Next.Text = "Next ----->";
-            this.button_Next.UseVisualStyleBackColor = false;
-            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(479, 96);
@@ -364,7 +402,7 @@
             // Karten_Spiel_Logo
             // 
             this.Karten_Spiel_Logo.Image = global::Memory_game.Properties.Resources.Screenshot_2023_06_02_012718;
-            this.Karten_Spiel_Logo.Location = new System.Drawing.Point(898, 137);
+            this.Karten_Spiel_Logo.Location = new System.Drawing.Point(913, 137);
             this.Karten_Spiel_Logo.Name = "Karten_Spiel_Logo";
             this.Karten_Spiel_Logo.Size = new System.Drawing.Size(209, 210);
             this.Karten_Spiel_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -480,65 +518,51 @@
             // 
             this.Zeit_Spiel.Tick += new System.EventHandler(this.Zeit_Spiel_Tick);
             // 
-            // _lbl_Hs_Puzzel
+            // pnlInfo
             // 
-            this._lbl_Hs_Puzzel.AutoSize = true;
-            this._lbl_Hs_Puzzel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._lbl_Hs_Puzzel.Location = new System.Drawing.Point(387, 209);
-            this._lbl_Hs_Puzzel.Name = "_lbl_Hs_Puzzel";
-            this._lbl_Hs_Puzzel.Size = new System.Drawing.Size(60, 25);
-            this._lbl_Hs_Puzzel.TabIndex = 29;
-            this._lbl_Hs_Puzzel.Text = "0000";
+            this.pnlInfo.Controls.Add(this.Bt_Exit_Info);
+            this.pnlInfo.Controls.Add(this.lb_Text_Info);
+            this.pnlInfo.Controls.Add(this.label9);
+            this.pnlInfo.Location = new System.Drawing.Point(1655, 127);
+            this.pnlInfo.Name = "pnlInfo";
+            this.pnlInfo.Size = new System.Drawing.Size(237, 206);
+            this.pnlInfo.TabIndex = 31;
             // 
-            // label7
+            // Bt_Exit_Info
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(292, 209);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 25);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Puzzel: ";
+            this.Bt_Exit_Info.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_Exit_Info.BackgroundImage = global::Memory_game.Properties.Resources.stornieren;
+            this.Bt_Exit_Info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Bt_Exit_Info.FlatAppearance.BorderSize = 0;
+            this.Bt_Exit_Info.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Bt_Exit_Info.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Bt_Exit_Info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_Exit_Info.Location = new System.Drawing.Point(1750, 42);
+            this.Bt_Exit_Info.Name = "Bt_Exit_Info";
+            this.Bt_Exit_Info.Size = new System.Drawing.Size(78, 70);
+            this.Bt_Exit_Info.TabIndex = 28;
+            this.Bt_Exit_Info.UseVisualStyleBackColor = false;
+            this.Bt_Exit_Info.Click += new System.EventHandler(this.Bt_Exit_Info_Click);
             // 
-            // label8
+            // lb_Text_Info
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(306, 280);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 25);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "wort:";
+            this.lb_Text_Info.AutoSize = true;
+            this.lb_Text_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Text_Info.Location = new System.Drawing.Point(421, 238);
+            this.lb_Text_Info.Name = "lb_Text_Info";
+            this.lb_Text_Info.Size = new System.Drawing.Size(1031, 155);
+            this.lb_Text_Info.TabIndex = 1;
+            this.lb_Text_Info.Text = resources.GetString("lb_Text_Info.Text");
             // 
-            // _lbl_Hs_wort
+            // label9
             // 
-            this._lbl_Hs_wort.AutoSize = true;
-            this._lbl_Hs_wort.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._lbl_Hs_wort.Location = new System.Drawing.Point(387, 281);
-            this._lbl_Hs_wort.Name = "_lbl_Hs_wort";
-            this._lbl_Hs_wort.Size = new System.Drawing.Size(60, 25);
-            this._lbl_Hs_wort.TabIndex = 31;
-            this._lbl_Hs_wort.Text = "0000";
-            // 
-            // wort
-            // 
-            this.wort.AutoSize = true;
-            this.wort.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wort.Location = new System.Drawing.Point(292, 250);
-            this.wort.Name = "wort";
-            this.wort.Size = new System.Drawing.Size(72, 25);
-            this.wort.TabIndex = 32;
-            this.wort.Text = "karten";
-            // 
-            // _lbl_Hs_Karten
-            // 
-            this._lbl_Hs_Karten.AutoSize = true;
-            this._lbl_Hs_Karten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._lbl_Hs_Karten.Location = new System.Drawing.Point(387, 250);
-            this._lbl_Hs_Karten.Name = "_lbl_Hs_Karten";
-            this._lbl_Hs_Karten.Size = new System.Drawing.Size(60, 25);
-            this._lbl_Hs_Karten.TabIndex = 33;
-            this._lbl_Hs_Karten.Text = "0000";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(769, 23);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(209, 108);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Info";
             // 
             // Spiel_Menü
             // 
@@ -548,6 +572,7 @@
             this.BackgroundImage = global::Memory_game.Properties.Resources.natalia_rajs_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.pnlInfo);
             this.Controls.Add(this.pnlHighscore);
             this.Controls.Add(this.pnlSpielen);
             this.Controls.Add(this.pnlEinstellung);
@@ -564,8 +589,6 @@
             this.Name = "Spiel_Menü";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Spiel_Menü_Load);
-            this.pnlInfo.ResumeLayout(false);
-            this.pnlInfo.PerformLayout();
             this.pnlHighscore.ResumeLayout(false);
             this.pnlHighscore.PerformLayout();
             this.pnlSpielen.ResumeLayout(false);
@@ -575,6 +598,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Karten_Spiel_Logo)).EndInit();
             this.pnlEinstellung.ResumeLayout(false);
             this.pnlEinstellung.PerformLayout();
+            this.pnlInfo.ResumeLayout(false);
+            this.pnlInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -590,15 +615,11 @@
         private System.Windows.Forms.Button button_Highscore_Spiel;
         private System.Windows.Forms.Button button_Spielen_Spiel;
         private System.Windows.Forms.Button button_Exit_Spiel;
-        private System.Windows.Forms.Panel pnlInfo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel pnlHighscore;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel pnlSpielen;
         private System.Windows.Forms.PictureBox Puzzle_Spiel_Logo;
         private System.Windows.Forms.PictureBox Karten_Spiel_Logo;
-        private System.Windows.Forms.Button button_Next;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel pnlEinstellung;
         private System.Windows.Forms.Label label_Einstellung;
@@ -609,15 +630,21 @@
         private System.Windows.Forms.Button Button_Exit_Spiel_Einstellung;
         private System.Windows.Forms.Button button_Exit_Spiel_Fenster;
         private System.Windows.Forms.Button button_Exit_Spiel_Highscore;
-        private System.Windows.Forms.Button Button_Exit_Spiel_Info;
         private System.Windows.Forms.Label label_Sound;
         private System.Windows.Forms.Timer Zeit_Spiel;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label wort;
         private System.Windows.Forms.Label _lbl_Hs_Karten;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label _lbl_Hs_wort;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label _lbl_Hs_Puzzel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lb_Kartenpaare_suchen_S_Menü;
+        private System.Windows.Forms.Label lb_Puzzle_Sp_Menü;
+        private System.Windows.Forms.Label lb_Wort_Raten_S_Menü;
+        private System.Windows.Forms.Panel pnlInfo;
+        private System.Windows.Forms.Button Bt_Exit_Info;
+        private System.Windows.Forms.Label lb_Text_Info;
+        private System.Windows.Forms.Label label9;
     }
 }
