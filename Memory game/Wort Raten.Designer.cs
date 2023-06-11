@@ -36,6 +36,7 @@
             this.lb_Versuche = new System.Windows.Forms.Label();
             this.Button_Neu_Starten = new System.Windows.Forms.Button();
             this.Zeigen_Bt = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_Wort_Raten
@@ -121,11 +122,28 @@
             this.Zeigen_Bt.UseVisualStyleBackColor = false;
             this.Zeigen_Bt.Click += new System.EventHandler(this.Zeigen_Bt_Click);
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.BackgroundImage = global::Memory_game.Properties.Resources.stornieren;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(1057, 12);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(78, 70);
+            this.button13.TabIndex = 55;
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // Wort_Raten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1147, 814);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.Zeigen_Bt);
             this.Controls.Add(this.Button_Neu_Starten);
             this.Controls.Add(this.lb_Versuche);
@@ -150,5 +168,6 @@
         private System.Windows.Forms.Label lb_Versuche;
         private System.Windows.Forms.Button Button_Neu_Starten;
         private System.Windows.Forms.Button Zeigen_Bt;
+        private System.Windows.Forms.Button button13;
     }
 }
