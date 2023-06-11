@@ -33,9 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label_Zeit_Spiel = new System.Windows.Forms.Label();
             this.button_Einstellung_Spiel = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this._lbl_Anmelde_Name = new System.Windows.Forms.Label();
             this.button_Info_Spiel = new System.Windows.Forms.Button();
-            this.button_Highscore_Spiel = new System.Windows.Forms.Button();
             this.button_Spielen_Spiel = new System.Windows.Forms.Button();
             this.button_Exit_Spiel = new System.Windows.Forms.Button();
             this.pnlHighscore = new System.Windows.Forms.Panel();
@@ -121,17 +120,17 @@
             this.button_Einstellung_Spiel.UseVisualStyleBackColor = false;
             this.button_Einstellung_Spiel.Click += new System.EventHandler(this.Button_Einstellung_Spiel_Click);
             // 
-            // label2
+            // _lbl_Anmelde_Name
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(44, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 42);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "xxxxxx";
+            this._lbl_Anmelde_Name.AutoSize = true;
+            this._lbl_Anmelde_Name.BackColor = System.Drawing.Color.Transparent;
+            this._lbl_Anmelde_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbl_Anmelde_Name.ForeColor = System.Drawing.Color.Black;
+            this._lbl_Anmelde_Name.Location = new System.Drawing.Point(44, 81);
+            this._lbl_Anmelde_Name.Name = "_lbl_Anmelde_Name";
+            this._lbl_Anmelde_Name.Size = new System.Drawing.Size(138, 42);
+            this._lbl_Anmelde_Name.TabIndex = 1;
+            this._lbl_Anmelde_Name.Text = "xxxxxx";
             // 
             // button_Info_Spiel
             // 
@@ -148,21 +147,6 @@
             this.button_Info_Spiel.UseVisualStyleBackColor = false;
             this.button_Info_Spiel.Click += new System.EventHandler(this.Button_Info_Spiel_Click);
             // 
-            // button_Highscore_Spiel
-            // 
-            this.button_Highscore_Spiel.BackColor = System.Drawing.Color.Goldenrod;
-            this.button_Highscore_Spiel.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
-            this.button_Highscore_Spiel.FlatAppearance.BorderSize = 0;
-            this.button_Highscore_Spiel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Highscore_Spiel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Highscore_Spiel.Location = new System.Drawing.Point(806, 596);
-            this.button_Highscore_Spiel.Name = "button_Highscore_Spiel";
-            this.button_Highscore_Spiel.Size = new System.Drawing.Size(352, 111);
-            this.button_Highscore_Spiel.TabIndex = 25;
-            this.button_Highscore_Spiel.Text = "Highscore";
-            this.button_Highscore_Spiel.UseVisualStyleBackColor = false;
-            this.button_Highscore_Spiel.Click += new System.EventHandler(this.Button_Highscore_Spiel_Click);
-            // 
             // button_Spielen_Spiel
             // 
             this.button_Spielen_Spiel.BackColor = System.Drawing.Color.Goldenrod;
@@ -170,7 +154,7 @@
             this.button_Spielen_Spiel.FlatAppearance.BorderSize = 0;
             this.button_Spielen_Spiel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Spielen_Spiel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Spielen_Spiel.Location = new System.Drawing.Point(806, 427);
+            this.button_Spielen_Spiel.Location = new System.Drawing.Point(806, 569);
             this.button_Spielen_Spiel.Name = "button_Spielen_Spiel";
             this.button_Spielen_Spiel.Size = new System.Drawing.Size(352, 111);
             this.button_Spielen_Spiel.TabIndex = 26;
@@ -577,11 +561,10 @@
             this.Controls.Add(this.pnlSpielen);
             this.Controls.Add(this.pnlEinstellung);
             this.Controls.Add(this.button_Spielen_Spiel);
-            this.Controls.Add(this.button_Highscore_Spiel);
             this.Controls.Add(this.button_Info_Spiel);
             this.Controls.Add(this.button_Einstellung_Spiel);
             this.Controls.Add(this.label_Zeit_Spiel);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this._lbl_Anmelde_Name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Exit_Spiel);
             this.ForeColor = System.Drawing.Color.Transparent;
@@ -608,11 +591,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label _lbl_Anmelde_Name;
         private System.Windows.Forms.Label label_Zeit_Spiel;
         private System.Windows.Forms.Button button_Einstellung_Spiel;
         private System.Windows.Forms.Button button_Info_Spiel;
-        private System.Windows.Forms.Button button_Highscore_Spiel;
         private System.Windows.Forms.Button button_Spielen_Spiel;
         private System.Windows.Forms.Button button_Exit_Spiel;
         private System.Windows.Forms.Panel pnlHighscore;

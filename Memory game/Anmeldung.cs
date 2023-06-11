@@ -100,8 +100,7 @@ namespace Memory_game
 
             string benutzername = textBox_Ben_An.Text;
             string passwort = textBox2.Text;
-            string sqlCommand = "SELECT a.ANMELDENAME, a.PASSWORT, a.KARTENBAARE_HIGHSCORE, a.PUZZEL_HIGHSCORE, a.WORTRATEN_HIGHSCORE FROM T_USER a WHERE a.ANMELDENAME = '"+benutzername+"' AND  a.PASSWORT = '"+passwort+"'";
-            //
+            string sqlCommand = "SELECT a.ANMELDENAME, a.PASSWORT FROM T_USER a WHERE a.ANMELDENAME = '"+benutzername+"' AND  a.PASSWORT = '"+passwort+"'";         
 
 
             DM.LoadData2Table(sqlCommand, "User");
@@ -189,7 +188,7 @@ namespace Memory_game
             if (password == password2)
             {
                 // sql command speichen in varuabel
-                SqlCommand = "INSERT INTO T_USER (ANMELDENAME, PASSWORT, KARTENBAARE_HIGHSCORE,PUZZEL_HIGHSCORE, WORTRATEN_HIGHSCORE)VALUES('"+benutzername+"','"+password+"','0','0','0'); ";
+                SqlCommand = "INSERT INTO T_USER (ANMELDENAME, PASSWORT)VALUES('"+benutzername+"','"+password+"'); ";
                 DM.ExecuteSimpleDML(SqlCommand);
                 pnlAnmelden.Visible = true;
                 pnlAnmelden.Dock = DockStyle.Fill;

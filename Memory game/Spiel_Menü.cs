@@ -27,9 +27,7 @@ namespace Memory_game
 
             //device-Objekt
 
-            _lbl_Hs_Puzzel.Text = Anmeldung.DM.ds.Tables["User"].Rows[0][3].ToString();
-            _lbl_Hs_Karten.Text = Anmeldung.DM.ds.Tables["User"].Rows[0][2].ToString();
-            _lbl_Hs_wort.Text = Anmeldung.DM.ds.Tables["User"].Rows[0][4].ToString();
+            _lbl_Anmelde_Name.Text = Anmeldung.DM.ds.Tables["User"].Rows[0][0].ToString();
         }
 
         private void Button_Exit_Spiel_Click(object sender, EventArgs e)
