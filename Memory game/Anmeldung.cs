@@ -116,14 +116,12 @@ namespace Memory_game
             {
                 if (DM.ds.Tables[0].Rows[0][0].ToString() == benutzername && DM.ds.Tables[0].Rows[0][1].ToString() == passwort)
                 {
-                    // Open Form2 since all input fields are not empty
+
                     Spiel_Menü form2 = new Spiel_Menü();
                     form2.Show();
-
-                    // Close Form1
                     this.Hide();
                 }
-                
+                player.PlayLooping();
             }
             else
             {
