@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NAudio.CoreAudioApi;
+using NAudio.Dmo.Effect;
 
 namespace Memory_game
 {
@@ -32,7 +33,13 @@ namespace Memory_game
             player = new SoundPlayer("Hintergrund-Sound.wav");
             enumerator = new MMDeviceEnumerator();
             device = enumerator.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia); //MMDeviceEnumerator- und MMDevice-Objekt
-                                                                                           //device-Objekt
+
+
+            //device-Objekt
+
+            _lbl_Hs_Puzzel.Text = Anmeldung.DM.ds.Tables["User"].Rows[0][3].ToString();
+            _lbl_Hs_Karten.Text = Anmeldung.DM.ds.Tables["User"].Rows[0][2].ToString();
+            _lbl_Hs_wort.Text = Anmeldung.DM.ds.Tables["User"].Rows[0][4].ToString();
         }
 
         private void Button_Exit_Spiel_Click(object sender, EventArgs e)

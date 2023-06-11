@@ -8,7 +8,7 @@ namespace Memory_game
 {
     public partial class Anmeldung : Form
     {
-        public SoundPlayer player;       
+        public SoundPlayer player;
         public Anmeldung()
         {
             InitializeComponent();
@@ -36,8 +36,6 @@ namespace Memory_game
 
             }
 
-
-            Console.WriteLine(DM.GetServerVersion());
 
         }
 
@@ -92,7 +90,8 @@ namespace Memory_game
 
         private void Button_Anmelden_An_Click(object sender, EventArgs e)
         {
-            
+
+
             if (textBox_Ben_An.Text == "Geben Sie den Benutzernamen ein" || string.IsNullOrEmpty(textBox_Ben_An.Text))
             {
 
@@ -104,20 +103,42 @@ namespace Memory_game
             }
 
             if (textBox2.Text == "Geben Sie den Passwort ein" || string.IsNullOrEmpty(textBox2.Text))
-            { 
+            {
                 panel_Meldung_An2.Visible = true;
                 textBox2.Focus();
                 return;
             }
+
+            string benutzername = textBox_Ben_An.Text;
+            string passwort = textBox2.Text;
+            string sqlCommand = "SELECT a.ANMELDENAME, a.PASSWORT, a.KARTENBAARE_HIGHSCORE, a.PUZZEL_HIGHSCORE, a.WORTRATEN_HIGHSCORE FROM T_USER a WHERE a.ANMELDENAME = '"+benutzername+"' AND  a.PASSWORT = '"+passwort+"'";
+
+            DM.LoadData2Table(sqlCommand, "User");
+
+
+            if (DM.ds.Tables.Count > 0 && DM.ds.Tables[0].Rows.Count > 0)
+            {
+                if (DM.ds.Tables[0].Rows[0][0].ToString() == benutzername && DM.ds.Tables[0].Rows[0][1].ToString() == passwort)
+                {
+                    // Open Form2 since all input fields are not empty
+                    Spiel_Menü form2 = new Spiel_Menü();
+                    form2.Show();
+
+                    // Close Form1
+                    this.Hide();
+                }
+                else
+                {
+
+                    label_Meldung1.Show();
+                }
+            }
+
+
+
+
             //
             //player.PlayLooping(); // Sound in einer Endlosschleife abspielen
-
-            // Öffne Form2, da alle Eingabefelder nicht leer sind
-            Spiel_Menü form2 = new Spiel_Menü();
-            form2.Show();
-
-            // Schließe Form1
-            this.Hide();
         }
 
 
@@ -168,6 +189,29 @@ namespace Memory_game
                 return;
 
             }
+
+            // eingaben in variablen speichen 
+            string benutzername = textBox_Benutzer_Acc.Text;
+            string password = Passwort_Acc.Text;
+            string password2 = textBox_Passwort2_Acc.Text;
+            string SqlCommand = "";
+
+            //checken ob passwort und passwort bestätiogen sind gleich 
+            if (password == password2)
+            {
+                // sql command speichen in varuabel
+                SqlCommand = "INSERT INTO T_USER (ANMELDENAME, PASSWORT, KARTENBAARE_HIGHSCORE,PUZZEL_HIGHSCORE, WORTRATEN_HIGHSCORE)VALUES('"+benutzername+"','"+password+"','0','0','0'); ";
+                DM.ExecuteSimpleDML(SqlCommand);
+                pnlAnmelden.Visible = true;
+                pnlAnmelden.Dock = DockStyle.Fill;
+                pnlLogo.Dock = DockStyle.Left;
+                pnlAccount.Visible = false;
+            }
+            else
+            {
+                textBox_Passwort2_Acc.Text = "Das Passwort ist nicht identisch";
+            }
+
         }
 
         private void TextBox8_Click(object sender, EventArgs e)
@@ -195,7 +239,7 @@ namespace Memory_game
 
         private void Account_erstellen_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            pnlAccount.Visible = true;          
+            pnlAccount.Visible = true;
             pnlAccount.Dock = DockStyle.Fill;
             pnlAnmelden.Visible = false;
         }
