@@ -17,13 +17,13 @@ namespace Memory_game
         }
 
         public static Datamodule DM;
-        private void ConnectToDatabank()
+        private void ConnectToDatabank() //daten bank verbindung
         {
             try
             {
                 DM = new Datamodule("SYSDBA",
-                               "Diyar1010",
-                               @"C:\Users\diyar\Desktop\4\Memory game2\Memory_Game-DB.Fdb",
+                               "masterkey",
+                               @"C:\Users\anwar\Documents\Github\MEMORY_GAME-DB.FDB",
                                "localhost",
                                3050
                                );
@@ -36,12 +36,7 @@ namespace Memory_game
 
             }
 
-
         }
-
-
-
-
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -91,7 +86,6 @@ namespace Memory_game
         private void Button_Anmelden_An_Click(object sender, EventArgs e)
         {
 
-
             if (textBox_Ben_An.Text == "Geben Sie den Benutzernamen ein" || string.IsNullOrEmpty(textBox_Ben_An.Text))
             {
 
@@ -112,6 +106,8 @@ namespace Memory_game
             string benutzername = textBox_Ben_An.Text;
             string passwort = textBox2.Text;
             string sqlCommand = "SELECT a.ANMELDENAME, a.PASSWORT, a.KARTENBAARE_HIGHSCORE, a.PUZZEL_HIGHSCORE, a.WORTRATEN_HIGHSCORE FROM T_USER a WHERE a.ANMELDENAME = '"+benutzername+"' AND  a.PASSWORT = '"+passwort+"'";
+            //
+
 
             DM.LoadData2Table(sqlCommand, "User");
 
@@ -127,18 +123,18 @@ namespace Memory_game
                     // Close Form1
                     this.Hide();
                 }
-                else
-                {
+                
+            }
+            else
+            {
+                MessageBox.Show("Das Konto existiert nicht oder das Passwort ist falsch. " +
+                    "Bitte erstellen Sie zunächst ein Konto oder korrigieren Sie die Daten" +
+                    " und versuchen Sie es erneut.", "Fehlermeldung!!");
 
-                    label_Meldung1.Show();
-                }
             }
 
-
-
-
             //
-            //player.PlayLooping(); // Sound in einer Endlosschleife abspielen
+          //player.PlayLooping(); // Sound in einer Endlosschleife abspielen
         }
 
 
