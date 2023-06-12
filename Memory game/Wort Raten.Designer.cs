@@ -145,6 +145,7 @@
             this.BackgroundImage = global::Memory_game.Properties.Resources.Logisches_Denken;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1147, 814);
+            this.ControlBox = false;
             this.Controls.Add(this.button13);
             this.Controls.Add(this.Zeigen_Bt);
             this.Controls.Add(this.Button_Neu_Starten);
@@ -154,9 +155,9 @@
             this.Controls.Add(this.lb_Text);
             this.Controls.Add(this.lb_Wort_Raten);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Wort_Raten";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Wort_Raten";
             this.ResumeLayout(false);
             this.PerformLayout();
 

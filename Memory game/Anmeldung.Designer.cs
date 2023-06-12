@@ -51,7 +51,7 @@
             this.panel_Meldung_An2 = new System.Windows.Forms.Panel();
             this.label_Meldung2 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Tb_Paswort_A = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.Logo_Pass_An = new System.Windows.Forms.PictureBox();
             this.label_Passwort_An = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.panel_Meldung_An = new System.Windows.Forms.Panel();
             this.label_Meldung1 = new System.Windows.Forms.Label();
             this.panel_Ben_Anm = new System.Windows.Forms.Panel();
-            this.textBox_Ben_An = new System.Windows.Forms.TextBox();
+            this.Tb_Ben_An = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Logo_Ben_An = new System.Windows.Forms.PictureBox();
             this.Login = new System.Windows.Forms.Label();
@@ -310,7 +310,7 @@
             this.Account_erstellen.AutoSize = true;
             this.Account_erstellen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Account_erstellen.LinkColor = System.Drawing.Color.White;
-            this.Account_erstellen.Location = new System.Drawing.Point(23, 453);
+            this.Account_erstellen.Location = new System.Drawing.Point(176, 453);
             this.Account_erstellen.Name = "Account_erstellen";
             this.Account_erstellen.Size = new System.Drawing.Size(162, 25);
             this.Account_erstellen.TabIndex = 11;
@@ -366,7 +366,7 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.textBox2);
+            this.panel8.Controls.Add(this.Tb_Paswort_A);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
@@ -374,19 +374,19 @@
             this.panel8.Size = new System.Drawing.Size(430, 51);
             this.panel8.TabIndex = 4;
             // 
-            // textBox2
+            // Tb_Paswort_A
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(1, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(418, 23);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Geben Sie den Passwort ein";
-            this.textBox2.Click += new System.EventHandler(this.TextBox2_Click);
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged_1);
+            this.Tb_Paswort_A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Tb_Paswort_A.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Tb_Paswort_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Paswort_A.ForeColor = System.Drawing.Color.Gray;
+            this.Tb_Paswort_A.Location = new System.Drawing.Point(1, 3);
+            this.Tb_Paswort_A.Name = "Tb_Paswort_A";
+            this.Tb_Paswort_A.Size = new System.Drawing.Size(418, 23);
+            this.Tb_Paswort_A.TabIndex = 2;
+            this.Tb_Paswort_A.Text = "Geben Sie den Passwort ein";
+            this.Tb_Paswort_A.Click += new System.EventHandler(this.TextBox2_Click);
+            this.Tb_Paswort_A.TextChanged += new System.EventHandler(this.Tb_Paswort_A_TextChanged_1);
             // 
             // panel9
             // 
@@ -449,7 +449,7 @@
             // 
             // panel_Ben_Anm
             // 
-            this.panel_Ben_Anm.Controls.Add(this.textBox_Ben_An);
+            this.panel_Ben_Anm.Controls.Add(this.Tb_Ben_An);
             this.panel_Ben_Anm.Controls.Add(this.panel3);
             this.panel_Ben_Anm.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Ben_Anm.Location = new System.Drawing.Point(0, 0);
@@ -457,19 +457,19 @@
             this.panel_Ben_Anm.Size = new System.Drawing.Size(430, 51);
             this.panel_Ben_Anm.TabIndex = 4;
             // 
-            // textBox_Ben_An
+            // Tb_Ben_An
             // 
-            this.textBox_Ben_An.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.textBox_Ben_An.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_Ben_An.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Ben_An.ForeColor = System.Drawing.Color.Gray;
-            this.textBox_Ben_An.Location = new System.Drawing.Point(3, 4);
-            this.textBox_Ben_An.Name = "textBox_Ben_An";
-            this.textBox_Ben_An.Size = new System.Drawing.Size(418, 23);
-            this.textBox_Ben_An.TabIndex = 2;
-            this.textBox_Ben_An.Text = "Geben Sie den Benutzernamen ein";
-            this.textBox_Ben_An.Click += new System.EventHandler(this.TextBox1_Click);
-            this.textBox_Ben_An.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.Tb_Ben_An.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Tb_Ben_An.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Tb_Ben_An.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Ben_An.ForeColor = System.Drawing.Color.Gray;
+            this.Tb_Ben_An.Location = new System.Drawing.Point(3, 4);
+            this.Tb_Ben_An.Name = "Tb_Ben_An";
+            this.Tb_Ben_An.Size = new System.Drawing.Size(418, 23);
+            this.Tb_Ben_An.TabIndex = 2;
+            this.Tb_Ben_An.Text = "Geben Sie den Benutzernamen ein";
+            this.Tb_Ben_An.Click += new System.EventHandler(this.TextBox1_Click);
+            this.Tb_Ben_An.TextChanged += new System.EventHandler(this.Tb_Ben_An_TextChanged);
             // 
             // panel3
             // 
@@ -538,7 +538,7 @@
             this.linkLabel_Anmelden_Acc.TabIndex = 18;
             this.linkLabel_Anmelden_Acc.TabStop = true;
             this.linkLabel_Anmelden_Acc.Text = "Anmelden";
-            this.linkLabel_Anmelden_Acc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_Anmelden_Clicked);
+            this.linkLabel_Anmelden_Acc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLb_Anmelden_Clicked);
             // 
             // button_Account_erstellen
             // 
@@ -862,7 +862,7 @@
         private System.Windows.Forms.Label Login;
         private System.Windows.Forms.PictureBox Logo_Ben_An;
         private System.Windows.Forms.Label label_Anmelde_Name_An;
-        private System.Windows.Forms.TextBox textBox_Ben_An;
+        private System.Windows.Forms.TextBox Tb_Ben_An;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel_Ben_Anm;
@@ -871,7 +871,7 @@
         private System.Windows.Forms.Panel panel_Meldung_An2;
         private System.Windows.Forms.Label label_Meldung2;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Tb_Paswort_A;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox Logo_Pass_An;
         private System.Windows.Forms.Label label_Passwort_An;

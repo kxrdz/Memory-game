@@ -345,6 +345,7 @@
             this.BackgroundImage = global::Memory_game.Properties.Resources._30001731_2206_w026_n002_2110b_p1_2110;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ControlBox = false;
             this.Controls.Add(this.Exit_Button_Karten);
             this.Controls.Add(this.label_verbleibende_Karten);
             this.Controls.Add(this.btZeigen);

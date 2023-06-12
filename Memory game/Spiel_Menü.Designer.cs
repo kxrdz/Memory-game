@@ -556,6 +556,7 @@
             this.BackgroundImage = global::Memory_game.Properties.Resources.natalia_rajs_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlInfo);
             this.Controls.Add(this.pnlHighscore);
             this.Controls.Add(this.pnlSpielen);

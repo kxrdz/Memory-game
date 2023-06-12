@@ -277,6 +277,7 @@
             this.BackgroundImage = global::Memory_game.Properties.Resources.wallpaperflare_com_wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ControlBox = false;
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.label_verbleibende_Zeit_Puzzle);
             this.Controls.Add(this.label1);
